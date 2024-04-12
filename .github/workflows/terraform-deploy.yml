@@ -2,7 +2,7 @@ name: create
 
 on:
   workflow_dispatch:
-env:
+env: 
   PORT: 6550
   USERNAME: ec2-user   
 jobs:
