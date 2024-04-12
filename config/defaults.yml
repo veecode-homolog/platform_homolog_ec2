@@ -1,0 +1,7 @@
+---
+cluster_name: "platform_homolog_ec2"
+VPC_ID: "vpc-0bcc1356e5caee5f0"
+publicsCIDRblock: "10.0.0.2/24"
+availabilityZone: "us-east-1a"
+instance_type: "t3.medium"
+keypar: "platform_kp"

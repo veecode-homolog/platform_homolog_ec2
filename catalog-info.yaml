@@ -1,0 +1,16 @@
+apiVersion: veecode.backstage.io/v1alpha1
+kind: Cluster
+metadata:
+  name: "platform_homolog_ec2"
+  environment:
+    cluster_type: ec2
+  annotations:
+    github.com/project-slug: veecode-homolog/platform_homolog_ec2
+    backstage.io/techdocs-ref: dir:.
+    github.com/workflows: terraform-deploy.yml,start_instance.yml,stop_instance.yml,terraform-destroy.yml,deploy_dashboard
+spec:
+  type: ec2
+  lifecycle: experimental
+  owner: "group:default/admin"
+  environment: 'environment:default/platform_homolog_environment'
+  
