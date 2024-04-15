@@ -6,7 +6,7 @@ env:
   PORT: 6550
   USERNAME: ec2-user   
 jobs:
-  Start_Instance: 
+  Start_Instance:  
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
