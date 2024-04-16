@@ -4,7 +4,7 @@ metadata:
   name: "platform_homolog_ec2"
   environment:
     cluster_type: ec2
-    public_ip: 44.223.149.141
+    public_ip: 3.209.1.77
   annotations:
     github.com/project-slug: veecode-homolog/platform_homolog_ec2
     backstage.io/techdocs-ref: dir:.
