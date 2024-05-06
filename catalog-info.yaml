@@ -9,7 +9,7 @@ metadata:
   annotations:
     github.com/project-slug: veecode-homolog/platform_homolog_ec2
     backstage.io/techdocs-ref: dir:.
-    github.com/workflows: terraform-deploy.yml,start_instance.yml,stop_instance.yml,terraform-destroy.yml,deploy_dashboard
+   # github.com/workflows: terraform-deploy.yml,start_instance.yml,stop_instance.yml,terraform-destroy.yml,deploy_dashboard
 spec:
   type: ec2
   lifecycle: experimental
