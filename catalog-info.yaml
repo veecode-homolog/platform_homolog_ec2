@@ -11,7 +11,8 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     github.com/workflows: terraform-deploy.yml,start_instance.yml,stop_instance.yml,terraform-destroy.yml,deploy_dashboard
     cluster/instructions: |
-      ssh -i ./key-pair.pem -o StrictHostKeyChecking=no ${EC2_USER}@${EC2_HOST} "mkdir -p .kube && k3d kubeconfig get ${CLUSTER_NAME} > ~/.kube/config"
+      ssh -i ./key-pair.pem -o StrictHostKeyChecking=no ${EC2_USER}@${EC2_HOST} 
+      "mkdir -p .kube && k3d kubeconfig get ${CLUSTER_NAME} > ~/.kube/config"
       scp -i ./key-pair.pem ${EC2_USER}@${EC2_HOST}:~/.kube/config ./config
       yq e 'del(.clusters[0].cluster.certificate-authority-data)' -i ~/.kube/config
       yq e '.clusters[0].cluster.insecure-skip-tls-verify=true' config -i
