@@ -11,7 +11,7 @@ metadata:
     backstage.io/techdocs-ref: dir:.
     github.com/workflows: terraform-deploy.yml,start_instance.yml,stop_instance.yml,terraform-destroy.yml,deploy_dashboard
     cluster/instructions: |
-      aws eks update-kubeconfig --region $region-code --name $my-cluster
+      aws eks update-kubeconfig --region $region_code --name $my_cluster
 spec:
   type: ec2
   lifecycle: experimental
